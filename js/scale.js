@@ -13,6 +13,7 @@ const scaleImage = function (value = DEFAULT_SCALE) {
   image.style.transform = `scale(${value / 100})`;
 };
 
+
 const onSmallerButtonClick = function () {
   const value = parseInt(scaleInput.value, 10);
   if (value < MAX_SCALE && value >= MIN_SCALE) {
